@@ -35,7 +35,7 @@ If there's more you want to add, I'm open to PRs!
 Possible ideas for the future:
 
 ---------------------------
-Function that fills out part of an array for mw_open_windows_ext
+Function that fills out part of an array made for mw_open_windows_ext
 
 (Across/along the screen + has separation space between the windows)
 
