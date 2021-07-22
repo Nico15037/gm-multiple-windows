@@ -34,10 +34,12 @@ If there's more you want to add, I'm open to PRs!
 
 Possible ideas for the future:
 
+---------------------------
 Function that fills out part of an array for mw_open_windows_ext
 
 (Across/along the screen + has separation space between the windows)
 
+---------------------------
 Function that places windows based on a pre-made config
 
 Examples:
