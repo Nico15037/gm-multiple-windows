@@ -1,7 +1,7 @@
 # gm-multiple-windows
 DISCLAIMER: This only works for TESTING - exported versions of your project won't open multiple windows
 
-The dll files and original ExecuteShell script were NOT made by me - please contact me if you know/are the creator
+The dll files and original ExecuteShell script were NOT made by me - please contact me if you are/know the creator
 
 As of now, there are two main functions:
 
