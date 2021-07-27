@@ -2,8 +2,8 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "ExecuteShell",
-    "path": "folders/Multiple Windows/ExecuteShell.yy",
+    "name": "Internal",
+    "path": "folders/Multiple Windows/Internal.yy",
   },
   "resourceVersion": "1.0",
   "name": "ExecuteShell",

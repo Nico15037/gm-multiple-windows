@@ -1,9 +1,5 @@
 //https://github.com/Nico15037/gm-multiple-windows
 
-///YOUR PROJECT FILE (.yyp for gms2) CAN'T HAVE ANY SPACES
-//"multiple_windows.yyp" - WILL WORK
-//"multiple windows.yyp" - WILL NOT WORK
-
 #macro mw_first_window_name_format "W1 " + _name
 #macro mw_extra_windows_name_format "W" + string(parameter_count()-2) + " " + _name
 //_name is the custom name you set when running the function
@@ -35,7 +31,7 @@ var i = _number-1;
 		    ExecuteShell(
 				parameter_string(0) + " " +
 		        parameter_string(1) + " " +
-		        parameter_string(2) + " " +
+		        "\"" + parameter_string(2) + "\"" + " " +
 				parameter_string(3) + " " +
 				parameter_string(4) + _par_string, false, false);
 				

@@ -12,11 +12,11 @@ function ExecuteShell() {
 	if (os_type == os_windows) 
 	{
 	    if (argument_count <= 3)
-	        var ExecuteShell_result = external_call(external_define("ExecuteShell\/ExecuteShell.dll", "ExecuteShell", dll_cdecl, ty_real, 2, ty_string, ty_real), argument[0], argument[1]);
+	        var ExecuteShell_result = external_call(external_define("MultipleWindows\/ExecuteShell.dll", "ExecuteShell", dll_cdecl, ty_real, 2, ty_string, ty_real), argument[0], argument[1]);
 	    else
-	        var ExecuteShell_result = external_call(external_define("ExecuteShell\/ExecuteShell.dll", "ExecuteShellEx", dll_cdecl, ty_real, 3, ty_string, ty_real, ty_real), argument[0], argument[1], argument[2]);
+	        var ExecuteShell_result = external_call(external_define("MultipleWindows\/ExecuteShell.dll", "ExecuteShellEx", dll_cdecl, ty_real, 3, ty_string, ty_real, ty_real), argument[0], argument[1], argument[2]);
 
-	    external_free("ExecuteShell\/ExecuteShell.dll");
+	    external_free("MultipleWindows\/ExecuteShell.dll");
 	    keyboard_clear(keyboard_lastkey);
 	    mouse_clear(mouse_lastbutton);
 	    return ExecuteShell_result;
@@ -24,8 +24,8 @@ function ExecuteShell() {
 
 	if (os_type == os_macosx)
 	{
-	    var ExecuteShell_result = external_call(external_define("ExecuteShell\/ExecuteShell.dylib", "ExecuteShell", dll_cdecl, ty_real, 2, ty_string, ty_real), argument[0], argument[1]);
-	    external_free("ExecuteShell\/ExecuteShell.dylib");
+	    var ExecuteShell_result = external_call(external_define("MultipleWindows\/ExecuteShell.dylib", "ExecuteShell", dll_cdecl, ty_real, 2, ty_string, ty_real), argument[0], argument[1]);
+	    external_free("MultipleWindows\/ExecuteShell.dylib");
 	    keyboard_clear(keyboard_lastkey);
 	    mouse_clear(mouse_lastbutton);
 	    return ExecuteShell_result;
@@ -33,8 +33,8 @@ function ExecuteShell() {
 
 	if (os_type == os_linux) 
 	{
-	    var ExecuteShell_result = external_call(external_define("ExecuteShell\/ExecuteShell.so", "ExecuteShell", dll_cdecl, ty_real, 2, ty_string, ty_real), argument[0], argument[1]);
-	    external_free("ExecuteShell\/ExecuteShell.so");
+	    var ExecuteShell_result = external_call(external_define("MultipleWindows\/ExecuteShell.so", "ExecuteShell", dll_cdecl, ty_real, 2, ty_string, ty_real), argument[0], argument[1]);
+	    external_free("MultipleWindows\/ExecuteShell.so");
 	    keyboard_clear(keyboard_lastkey);
 	    mouse_clear(mouse_lastbutton);
 	    return ExecuteShell_result;
