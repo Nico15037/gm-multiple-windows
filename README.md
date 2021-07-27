@@ -37,13 +37,6 @@ If there's more you want to add, I'm open to PRs!
 Possible ideas for the future:
 
 ---------------------------
-Compatibility with .yyp project files that have a space
-
-"project_name.yyp" - will work
-
-"project name.yyp" - will NOT work as of now
-
----------------------------
 Function that fills out part of an array made for mw_open_windows_ext
 
 (Across/along the screen + has separation space between the windows)
